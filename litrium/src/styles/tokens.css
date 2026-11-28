@@ -1,0 +1,154 @@
+/* Litrium design tokens. Components use these only: no raw values. */
+:root {
+  /* colour: backdrop (the "wallpaper" the glass floats on) */
+  --c-backdrop-1: #dfe3ee;
+  --c-backdrop-2: #f3eee8;
+  --c-backdrop-glow: rgba(255, 255, 255, 0.6);
+  --c-blob-mint: #3ccfa6;
+  --c-blob-violet: #8f7cf8;
+  --c-blob-peach: #ffae84;
+  --c-blob-sky: #5ab4ff;
+  --c-wx-sun: #e39b16;
+  --c-wx-partly: #c98a1c;
+  --c-wx-rain: #2f7fd1;
+
+  /* liquid glass */
+  --glass-fill: rgba(255, 255, 255, 0.34);
+  --glass-fill-strong: rgba(255, 255, 255, 0.56);
+  --glass-fill-faint: rgba(255, 255, 255, 0.16);
+  --glass-fill-modal: rgba(255, 255, 255, 0.72);
+  --glass-fill-solid: rgba(255, 255, 255, 0.62);
+  --glass-fill-ink: rgba(22, 22, 30, 0.78);
+  --glass-fill-accent: rgba(60, 207, 166, 0.58);
+  --glass-edge: rgba(255, 255, 255, 0.75);
+  --glass-edge-soft: rgba(255, 255, 255, 0.18);
+  --glass-highlight: rgba(255, 255, 255, 0.9);
+  --glass-inner-shade: rgba(20, 24, 40, 0.06);
+  --glass-shadow: 0 10px 30px rgba(30, 34, 60, 0.12), 0 2px 6px rgba(30, 34, 60, 0.06);
+  --glass-shadow-lift: 0 24px 60px rgba(30, 34, 60, 0.22), 0 4px 12px rgba(30, 34, 60, 0.08);
+  --glass-blur: 20px;
+  --glass-saturate: 180%;
+  --glass-edge-width: 1.5px;
+  --blob-size: 46vmax;
+  --blob-blur: 60px;
+  --blur-scrim: 6px;
+  --dur-drift: 28s;
+
+  /* colour: surfaces (frosted) */
+  --c-shell: rgba(246, 242, 237, 0.82);
+  --c-surface: rgba(255, 255, 255, 0.72);
+  --c-surface-strong: #ffffff;
+  --c-surface-sunken: rgba(255, 255, 255, 0.32);
+  --c-border: rgba(255, 255, 255, 0.5);
+  --c-border-strong: rgba(30, 26, 22, 0.18);
+
+  /* colour: text */
+  --c-text: #14161f;
+  --c-text-muted: #4d5263;
+  --c-text-faint: #6a6f80;
+  --c-text-on-accent: #06281f;
+  --c-text-on-dark: #f6f2ed;
+
+  /* colour: roles */
+  --c-accent: #3ccfa6;
+  --c-accent-strong: #1f9e7b;
+  --c-accent-soft: rgba(60, 207, 166, 0.16);
+  --c-ink: #24201c;
+  --c-black: #000000;
+  --c-positive: #0f7a5a;
+  --c-positive-soft: rgba(23, 138, 103, 0.12);
+  --c-negative: #c2412d;
+  --c-negative-soft: rgba(194, 65, 45, 0.11);
+  --c-warning: #a86a0c;
+  --c-warning-soft: rgba(212, 140, 20, 0.14);
+  --c-focus: #1f7ae0;
+  --c-scrim: rgba(30, 34, 60, 0.18);
+  --c-skeleton: rgba(30, 26, 22, 0.08);
+  --c-skeleton-shine: rgba(255, 255, 255, 0.6);
+  --c-sheen: rgba(255, 255, 255, 0.22);
+  --c-glass-on-accent: rgba(255, 255, 255, 0.38);
+  --c-frost-veil: rgba(255, 255, 255, 0.45);
+
+  /* card tones */
+  --c-card-ink-1: #1e1c1a;
+  --c-card-ink-2: #3b3732;
+  --c-card-mint-1: #57dbb5;
+  --c-card-mint-2: #1f9e7b;
+  --c-card-sand-1: #e9d8c3;
+  --c-card-sand-2: #b99a78;
+
+  /* type */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-2xs: 0.6875rem;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-md: 0.9375rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.5rem;
+  --fs-4xl: 3.5rem;
+  --fs-5xl: 4.5rem;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --lh-tight: 1.15;
+  --lh-normal: 1.45;
+  --ls-tight: -0.02em;
+
+  /* space (4px grid) */
+  --bw: 1px;
+  --bw-2: 2px;
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.25rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-10: 2.5rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+
+  /* radius */
+  --r-xs: 0.25rem;
+  --r-sm: 0.5rem;
+  --r-md: 0.875rem;
+  --r-lg: 1.25rem;
+  --r-xl: 1.75rem;
+  --r-pill: 999px;
+
+  /* shadow */
+  --sh-1: 0 1px 2px rgba(20, 16, 12, 0.06), 0 1px 1px rgba(20, 16, 12, 0.04);
+  --sh-2: 0 8px 24px rgba(20, 16, 12, 0.08), 0 2px 6px rgba(20, 16, 12, 0.05);
+  --sh-3: 0 24px 60px rgba(10, 8, 6, 0.35);
+  --sh-focus: 0 0 0 3px rgba(31, 122, 224, 0.35);
+
+  /* blur, sizes, motion */
+  --blur-glass: 18px;
+  --size-control: 2.5rem;
+  --size-control-sm: 2rem;
+  --size-icon: 1.125rem;
+  --size-avatar: 2.25rem;
+  --w-content: 1360px;
+  --w-modal: 30rem;
+  --w-drawer: 26rem;
+  --h-chart: 11rem;
+  --clock-lg: 13rem;
+  --clock-sm: 2.75rem;
+  --fs-clock: 4rem;
+  --h-chat: calc(100vh - 19.5rem);
+  --h-chat-mobile: calc(100dvh - 23rem);
+  --h-nav: 3.5rem;
+  --dur-fast: 120ms;
+  --dur-med: 220ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-glide: cubic-bezier(0.3, 1.18, 0.5, 1);
+  --dur-lens: 420ms;
+  --lift: -0.1875rem;
+  --z-nav: 20;
+  --z-overlay: 40;
+  --z-toast: 60;
+}
